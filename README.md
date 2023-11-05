@@ -1,5 +1,4 @@
-```markdown
-#WC (Word Count) Command
+# WC (Word Count) Command
 
 **WC** is a command-line utility that mimics the functionality of Linux's `wc` command, allowing you to count lines, words, and characters in text files.
 
@@ -32,7 +31,7 @@ Before using My WC, make sure you have the following prerequisites installed:
    ```
 2. Build the project using Gradle:
 
-   open "build.gradle.kts" as a new project in IDE that should build the project.
+   Open "build.gradle.kts" as a new project in IDE that should build the project.
 
 The project is now built and ready to use.
 
@@ -58,26 +57,28 @@ My WC supports the following options:
 - `-w`: Enable counting of words.
 - `-m`: Enable counting of characters.
 
+Count lines in a file:
+
 ```bash
-java -jar target/my-wc-1.0-SNAPSHOT.jar -l path/to/your/file.txt
+java -jar target/wc-1.0-SNAPSHOT.jar -l path/to/your/file.txt
 ```
 
 Count words in a file:
 
 ```bash
-java -jar target/my-wc-1.0-SNAPSHOT.jar -w path/to/your/file.txt
+java -jar target/wc-1.0-SNAPSHOT.jar -w path/to/your/file.txt
 ```
 
 Count characters in a file:
 
 ```bash
-java -jar target/my-wc-1.0-SNAPSHOT.jar -m path/to/your/file.txt
+java -jar target/wc-1.0-SNAPSHOT.jar -m path/to/your/file.txt
 ```
 
 Count lines, words, and characters in a file:
 
 ```bash
-java -jar target/my-wc-1.0-SNAPSHOT.jar -l -w -m path/to/your/file.txt
+java -jar target/wc-1.0-SNAPSHOT.jar -l -w -m path/to/your/file.txt
 ```
 
 ## Contributing
